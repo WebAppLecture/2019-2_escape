@@ -22,13 +22,6 @@
         <div id="dark2"></div>
         <div class="interface">
         </div>
-        <script type="module">
-            import("./data/js/game.js")
-                .then(modul => {
-                    window.Game = modul.default;
-                    window.game = new window.Game();
-                });
-                import("./data/js/Item.js").then((module) => window.Item = module.default);
-        </script>
+        <script src="./data/index.js" type="module"></script>
     </body>
 </html>
