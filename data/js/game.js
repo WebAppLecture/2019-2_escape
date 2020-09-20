@@ -1,8 +1,8 @@
 import ToggleWithBreakHandler from "./ToggleWithBreakHandler.js";
 import OpenInterfaceHandler from "./OpenInterfaceHandler.js";
-import Inventory from "./Inventory.js";
+import Inventory from "./inventory.js";
 import InventoryView from "./InventoryView.js";
-import ClickableItem from "./ClickableItem.js";
+import ClickableItem from "./clickableItem.js";
 import ItemFactory from "./ItemFactory.js";
 import DropDestinationFactory from "./DropDestinationFactory.js";
 
