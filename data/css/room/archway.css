@@ -1,0 +1,28 @@
+.archway {
+    position: absolute;
+    background-color: #333;
+    width: 4%;
+    height: 80%;
+    right: -16.6%;
+    bottom: -14.7%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: rotateY(-90deg);
+    box-shadow: rgb(140, 140, 120) 15px 0 0 0 inset,
+                black 15px 0 24px 0 inset;
+}
+
+.archwayfloor {
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    right: 0%;
+    bottom: 0%;
+    border-bottom: 3vh solid #85664a;
+    border-left: 0.9vw solid transparent;
+    box-sizing: content-box;
+}
+
+.r2 .archway {
+    left: -16.8%;
+}

@@ -1,0 +1,38 @@
+.cabinet {
+    position: absolute;
+    width: 20vw;
+    height: 40vh;
+    background-color: #45221c;
+    bottom: -5vh;
+    right: 2vw;
+    border: 10px solid #69342b;
+    box-sizing: border-box;
+    /* border-radius: 2%; */
+    /* box-shadow: #45221c -2px -5px 0 0; */
+  }
+
+  .cabinet .shelf {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+  }
+
+  /* .cabinet .shelf .base {
+    width: 100%;
+    height: 0;
+    border-bottom: 20px solid #331915;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    box-sizing: border-box;
+    bottom: 10px;
+    position: absolute;
+  } */
+
+  .cabinet .shelf .front {
+    width: 100%;
+    height: 10px;
+    background-color: #69342b;
+    position: absolute;
+    bottom: 0;
+  }

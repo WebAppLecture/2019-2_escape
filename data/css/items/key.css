@@ -1,0 +1,63 @@
+.key, .doorkey{
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    height: 2vh;
+    width: 2vh;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid black 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) -1px 2px 2px 1px,
+                black 0 0 0 1px inset ;
+    z-index: 3;
+}
+
+.key::after, .doorkey::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 1vh;
+    left: 0.1vw;
+    height: 3vh;
+    width: 0.4vw;
+    /* background-color: black; */
+    background: linear-gradient(to right top, black, rgb(87, 87, 87) 90%); ;
+    /* box-shadow:rgba(0, 0, 0, 0.4) -1px 2px 2px 0.25px; */
+    z-index: 1;
+}
+
+.key::before, .doorkey::before{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 2.8vh;
+    left: -0.2vw;
+    height: 1vh;
+    width: 0.3vw;
+    background-color: black;
+    box-shadow:rgba(0, 0, 0, 0.4) -1px 2px 2px 1px;
+    z-index: 2;
+}
+
+.doorkey{
+    border: solid yellow 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) -1px 2px 2px 1px,
+                rgba(0, 0, 0, 0.4) 0 0 3px 0.25px inset ;
+    bottom: -7vh;
+    left: 60vw;
+}
+
+.doorkey::after{
+    /* background-color: yellow; */
+    background: linear-gradient(to right top, yellow, rgb(232, 233, 178) 90%); ;
+}
+
+.doorkey::before{
+    background-color: yellow;
+}
+
+.inventory li .doorkey, .key{
+    position: absolute;
+    top: 4vh;
+    left: 3vh;
+}

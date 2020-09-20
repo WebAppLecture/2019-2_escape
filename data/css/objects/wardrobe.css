@@ -1,0 +1,92 @@
+.wardrobe {
+    position: absolute;
+    top:20%;
+    left: -10%;
+    width: 11vh;
+    height: 60vh;
+    background: linear-gradient(rgb(231, 231, 231), rgb(83, 83, 83)), linear-gradient(90deg, rgb(83, 83, 83),  rgb(231, 231, 231)),linear-gradient(90deg, rgb(83, 83, 83),  rgb(231, 231, 231));
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 5%,5% 85%, 5% 85%;
+    background-position: 0% 10%, 10% 85%, 85% 85%;
+    background-origin: border-box;
+    transform: rotateY(90deg);
+    z-index: -1;
+}
+
+.wardrobe::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+    left: 97.5%;
+    top: 9.5%;
+    background: linear-gradient(rgb(231, 231, 231), rgb(83, 83, 83));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+}
+
+.wardrobe::before {
+    display: block;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+    left: -2.5%;
+    top: 9.5%;
+    background-color: #666;
+}
+
+.wardrobefloorplate {
+    position: absolute;
+    transform: rotateX(90deg);
+    background-color: #bbb;
+    width: 15%;
+    height: 15%;
+    bottom: -23%;
+    left: -10%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
+    z-index: -1;
+}
+
+.jacket {
+    position: absolute;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: black;
+    width: 20%;
+    height: 60%;
+    top: 37%;    
+}
+
+.jacket::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -13%;
+    left: 40%;
+    width: 5%;
+    height: 10%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: rgb(102, 102, 102) solid 10px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.room:not(.toLeft) .jacket {
+    left: -8%;
+    top: 38%;
+}
+
+.room.toLeft .jacket {
+    left: -14%;
+    top: 36%;
+}

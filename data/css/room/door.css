@@ -1,0 +1,46 @@
+.door {
+    position: absolute;
+    width: 23%;
+    height: 75%;
+    background-color: rgb(97, 71, 54);
+    bottom: 0%;
+    right: 10%;
+    box-shadow:#111 0 0 5px 2px,
+    rgb(97,71,54) 0 0 0 40px inset,
+    #111 0 0 10px 45px inset;
+}
+
+.door::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    background-color: #9b958b;
+    left: 77%;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: rgba(1, 1, 1, 0.5) 5px 5px 5px 2px,
+                rgb(1, 1, 1) 0 0 8px 1px inset;
+}
+
+.keyhole {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    bottom: 40%;
+    left: 85%;
+    border-radius: 50%;
+}
+
+.keyhole::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: -8px;
+    left: 4px;
+    width: 8px;
+    height: 10px;
+}

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Escape!</title>
+        <link rel="icon" type="image/png" href="./data/img/Notausgang.png">
+        <link rel="stylesheet" href="./data/css/main.css">
+    </head>
+    <body>
+        <div class="room">
+            <div class="door"><div class="keyhole"></div></div>
+            <div class="trap"><div class="trapdoor"></div></div>
+            <div class="picturesafe"></div>
+            <div class="wardrobefloorplate"></div><div class="wardrobe"></div>
+            </div>
+        </div>
+        <div id="dark"></div>
+        <div class="r2">
+            <div class="archway"><div class="archwayfloor"></div></div>
+            <div class="lamp"></div>
+            <div class="window"></div>
+            <div class="curtainrail"></div>
+        </div>
+        <div id="dark2"></div>
+        <div class="interface">
+        </div>
+        <script type="module">
+            import("./data/js/game.js")
+                .then(modul => {
+                    window.Game = modul.default;
+                    window.game = new window.Game();
+                });
+                import("./data/js/Item.js").then((module) => window.Item = module.default);
+        </script>
+    </body>
+</html>

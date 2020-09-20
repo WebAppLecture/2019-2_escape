@@ -1,0 +1,62 @@
+.lamp {
+    background-color: yellow;
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    top: -20%;
+    right: 40%;
+    border-radius: 50%;
+    box-shadow: 0 -6px 0 6px rgb(37, 37, 43),
+                0 0 10px 7px rgb(161, 161, 64); 
+}
+
+.room.dark .lamp {
+    background-color: rgb(150, 150, 125);
+    box-shadow: 0 -6px 0 6px rgb(37, 37, 43);
+}
+
+.r2 .lamp {
+    width: 0.2vw;
+    height: 30vh;
+    Background-color: black;
+    top: -10vh;
+    left:50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px -1px 2px 2px ;
+    border-radius: 3%;
+}
+
+.r2 .lamp::after{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 100%;
+    left: -3000%;
+    width: 6000%;
+    height: 20%;
+    border-radius: 200px 200px 0 0;
+    z-index: 10;
+    background-color: #8a8985;
+    transform-origin: bottom center;
+    box-shadow: rgba(26, 26, 26, 0.6) 0 0 35px 15px inset;    
+}
+
+.r2 .lamp::before { 
+    position: absolute;
+    display:block;
+    content: "";
+    top: 112.5%;
+    left: -1vw;
+    width: 2vw;
+    height: 2vh;
+    border-radius: 200px 200px 0 0;
+   z-index: 10;
+    background-color: #eeff00;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    box-shadow: rgba(51, 51, 51, 0.4) 0 0 10px 1px inset;
+  }
+
+  .r2.dark2 .lamp::before {
+    background-color: rgb(150, 150, 125);
+    box-shadow: rgb(37, 37, 43) 0 0 10px 1px inset;
+}

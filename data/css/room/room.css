@@ -1,0 +1,64 @@
+.room, .r2 {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(200, 200, 180);
+    border-top: 20vh solid #444;
+    border-left: 20vw solid rgb(220, 220, 200);
+    border-right: 20vw solid rgb(220, 220, 200);
+    border-bottom: 20vh solid #85664a;
+    perspective: 20vh;
+    perspective-origin: center;
+}
+
+.r2 {
+    left: 100vw; 
+    top:0;
+    background-color: rgb(107, 134, 138);
+    border-top: 20vh solid #444;
+    border-left: 20vw solid rgb(200, 214, 220);
+    border-right: 20vw solid rgb(200, 214, 220);
+    border-bottom: 20vh solid #85664a;
+}
+
+.room:not(.dark) + #dark {
+    display: none;
+}
+.room.dark + #dark {
+    display: block;
+}
+
+.r2:not(.dark2) + #dark2 {
+    display: none;
+}
+.r2.dark2 + #dark2 {
+    display: block;
+}
+
+#dark {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0vh;
+    left: 0vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    pointer-events: none;
+}
+
+#dark2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0vh;
+    left: 100vw;
+    /* background-color: rgba(0,0,0,0.5); */
+    background: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.9));    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes toleft{
+    0%{left: 0;}
+    100%{left: -100vw;}
+}

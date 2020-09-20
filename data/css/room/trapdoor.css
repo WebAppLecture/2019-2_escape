@@ -1,0 +1,40 @@
+.trap {
+    position: absolute;
+    width: 20%;
+    height: 8%;
+    right:0%;
+    top:-20%;
+    background-color: rgb(61, 45, 36);
+    border-radius: 2%;
+    transform: rotateX(-90deg);
+    box-shadow: rgba(10, 10, 10, 0.5) 0 0 1px 1px inset,
+    #111 -2px 0 2px 0 inset,
+    #111 -1px 0 2px 0; 
+}
+
+.trapdoor {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    background-color:  rgb(87, 60, 47);
+    border-radius: 2%;
+    box-shadow: rgba(10, 10, 10, 0.5) 0 0 1px 1px inset,
+    #111 -2px 0 3px 0 inset;
+}
+
+.trapdoor::before {
+    display:block;
+    content: "";
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    background-color: bisque;
+    top: 45%;
+    left: 10%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.548) 2px 0 3px 1px,
+    rgb(218, 211, 203) 0 0 0 2px inset,
+    rgb(73, 47, 35) 0 0 0 20px inset;
+}

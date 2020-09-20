@@ -1,0 +1,51 @@
+.curtainleft, .curtainright{
+    height: 25vh;
+    width: 4vw;
+    background: repeating-linear-gradient(
+        to right,
+        #f6ba52,
+        #f6ba52 10%,
+        #ffd180 10%,
+        #ffd180 20%
+        );
+    background-size: 100% 20px;
+    position: absolute;
+    top: 18vh;
+    left:7vw;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px 2px 3px;}
+
+.curtainright{
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 2px 3px;
+    left:25vw;
+}
+
+.curtainrail {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24vw;
+    height: 0.5vh;
+    background-color: rgb(43, 43, 43);
+    top: 18vh;
+    left:6vw;
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px 2px 2px;
+    z-index:3;
+} 
+
+.r2:not(.auf) .curtainleft{
+    width: 4vw;
+}
+
+.r2.auf .curtainleft {
+    width: 10vw;
+}
+
+.r2:not(.aufr) .curtainright{
+    width: 4vw;
+}
+
+.r2.aufr .curtainright {
+    width: 11vw;
+    left: 18vw;
+}
