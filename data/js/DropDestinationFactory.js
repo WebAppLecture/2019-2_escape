@@ -1,5 +1,5 @@
 import ItemFactory from "./ItemFactory.js";
-import DropDestination from "./dropDestination.js";
+import DropDestination from "./DropDestination.js";
 
 export default class DropDestinationFactory {
     constructor(){}

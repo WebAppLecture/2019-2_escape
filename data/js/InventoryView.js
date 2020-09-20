@@ -1,4 +1,4 @@
-import Inventory from "./inventory.js"
+import Inventory from "./Inventory.js"
 
 export default class InventoryView {
     
